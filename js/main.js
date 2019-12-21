@@ -812,7 +812,7 @@ document.getElementById('listPedidos').addEventListener('click', function(e){
         })
     }
     // Si clickas en "borrPed".
-    if(e.target.id.startsWith('borrPed_')){
+    if(e.target.id.startsWith('borrPed')){
         // Obtenemos el id del pedido.
         var idOrder = e.target.id.substring(8)
         //console.log(idOrder)
@@ -822,9 +822,9 @@ document.getElementById('listPedidos').addEventListener('click', function(e){
             //console.log(res)
             // Si se borra correctamente muestro una alerta.
             if(res){
-                alert('Se ha borrado correctamente')
+                alert('Se borró correctamente')
             }else{
-                alert('Error')
+                alert('Error al borrar')
                 return
             }
             // Pedimos la lista de pedidos de ese id de usuario logueado.
