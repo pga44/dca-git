@@ -812,7 +812,7 @@ document.getElementById('listPedidos').addEventListener('click', function(e){
         })
     }
     // Si clickas en "borrPed".
-    if(e.target.id.startsWith('borrPed')){
+    if(e.target.id.startsWith('borrPed_')){
         // Obtenemos el id del pedido.
         var idOrder = e.target.id.substring(8)
         //console.log(idOrder)
